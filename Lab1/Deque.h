@@ -80,4 +80,4 @@ Deque<T>& Deque<T>::operator=(const Deque<T>& deque)
 		push_back(e->data);
 	}
 	return *this;
-}
+}  
