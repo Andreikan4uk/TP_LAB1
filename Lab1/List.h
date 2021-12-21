@@ -91,4 +91,4 @@ T& List<T>::operator[](int index) {
 	for (int i = 0; i < Queue<T>::size - 1 - index; i++)
 		e = e->prev;
 	return e->data;
-}
+}  
