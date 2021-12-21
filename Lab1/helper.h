@@ -11,7 +11,7 @@ T safeInput(T minInput, T maxInput) {
 		if (std::cin.fail() || method < minInput || method > maxInput)
 		{
 			std::cin.clear();
-			std::cout << "Íåâåðíûé ââîä.\nÏîâòîðèòå ñíîâà: ";
+			std::cout << "ÃÃ¥Ã¢Ã¥Ã°Ã­Ã»Ã© Ã¢Ã¢Ã®Ã¤.\nÃÃ®Ã¢Ã²Ã®Ã°Ã¨Ã²Ã¥ Ã±Ã­Ã®Ã¢Ã : ";
 		}
 		else
 		{
@@ -25,5 +25,4 @@ T safeInput(T minInput, T maxInput) {
 
 bool checkStringToInt(std::string s);
 bool InputInFileName(std::string& filename);
-void InputOutFileName(std::string& filename);
-
+void InputOutFileName(std::string& filename); 
