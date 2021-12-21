@@ -23,7 +23,7 @@ public:
 
 template <class T>
 T Stack<T>::pop_back() {
-	string err = "Стек пуст, нечего извлекать";
+	string err = "Г‘ГІГҐГЄ ГЇГіГ±ГІ, Г­ГҐГ·ГҐГЈГ® ГЁГ§ГўГ«ГҐГЄГ ГІГј";
 	if (isEmpty())
 		throw err;
 	T data = Queue<T>::tail->data;
@@ -42,7 +42,7 @@ T Stack<T>::pop_back() {
 template <class T>
 void Stack<T>::printToConsole() {
 	if (Queue<T>::size == 0)
-		cout << "Стек пуст";
+		cout << "Г‘ГІГҐГЄ ГЇГіГ±ГІ";
 	else
 		for (int i = 0; i < Queue<T>::size; i++)
 		{
@@ -70,5 +70,4 @@ Stack<T>& Stack<T>::operator=(const Stack<T>& stack)
 		push_back(e->data);
 	}
 	return *this;
-}
-
+}  
