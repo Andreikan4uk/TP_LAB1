@@ -34,7 +34,7 @@ void List<T>::push_font(T data) {
 
 template <class T>
 T List<T>::pop_back() {
-	string err = "Список пуст, нечего извлекать";
+	string err = "Г‘ГЇГЁГ±Г®ГЄ ГЇГіГ±ГІ, Г­ГҐГ·ГҐГЈГ® ГЁГ§ГўГ«ГҐГЄГ ГІГј";
 	if (isEmpty())
 		throw err;
 	T data = Queue<T>::tail->data;
@@ -53,7 +53,7 @@ T List<T>::pop_back() {
 template <class T>
 void List<T>::printToConsole() {
 	if (Queue<T>::size == 0)
-		cout << "Список пуст";
+		cout << "Г‘ГЇГЁГ±Г®ГЄ ГЇГіГ±ГІ";
 	else
 		for (int i = 0; i < Queue<T>::size; i++)
 		{
