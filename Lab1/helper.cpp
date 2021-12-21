@@ -11,7 +11,7 @@ bool checkStringToInt(std::string s)
 bool checkFilename(std::string file)
 {
 	if (file.size() < 4 && file[0] != '0') {
-		std::cout << "Èìÿ ôàéëà ñëèøêîì êîðîòêîå.\n";
+		std::cout << "ÃˆÃ¬Ã¿ Ã´Ã Ã©Ã«Ã  Ã±Ã«Ã¨Ã¸ÃªÃ®Ã¬ ÃªÃ®ÄŸÃ®Ã²ÃªÃ®Ã¥.\n";
 		return false;
 	}
 	if ((((file[0] == 'c') || (file[0] == 'C')) && ((file[1] == 'o') || (file[1] == 'O'))
@@ -31,7 +31,7 @@ bool checkFilename(std::string file)
 						&& ((file[4] == '.') || (file[4] == '\0'))))
 	{
 		std::cin.ignore(INT_MAX, '\n');
-		std::cout << "Äàííîå èìÿ ôàéëà èñïîëüçóåòñÿ Windows.\n";
+		std::cout << "Ã„Ã Ã­Ã­Ã®Ã¥ Ã¨Ã¬Ã¿ Ã´Ã Ã©Ã«Ã  Ã¨Ã±Ã¯Ã®Ã«Ã¼Ã§Ã³Ã¥Ã²Ã±Ã¿ Windows.\n";
 		return false;
 	}
 	int i = file.size();
@@ -40,7 +40,7 @@ bool checkFilename(std::string file)
 	else
 	{
 		if (file[i - 1] != '0')
-			std::cout << "Ôàéë äîëæåí èìåòü ôîðìàò .txt\n";
+			std::cout << "Ã”Ã Ã©Ã« Ã¤Ã®Ã«Ã¦Ã¥Ã­ Ã¨Ã¬Ã¥Ã²Ã¼ Ã´Ã®ÄŸÃ¬Ã Ã² .txt\n";
 		return false;
 	}
 }
@@ -49,7 +49,7 @@ bool InputInFileName(std::string& filename)
 {
 	std::ifstream file;
 	bool isCorrect;
-	std::cout << "Ââåäèòå íàçâàíèå ôàéëà (ñ ðàñøèðåíèåì)(0 - îòêàç): ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã´Ã Ã©Ã«Ã  (Ã± ÄŸÃ Ã±Ã¸Ã¨ÄŸÃ¥Ã­Ã¨Ã¥Ã¬)(0 - Ã®Ã²ÃªÃ Ã§): ";
 	std::cin >> filename;
 	isCorrect = checkFilename(filename);
 	if (isCorrect)
@@ -58,8 +58,8 @@ bool InputInFileName(std::string& filename)
 	{
 
 		if (isCorrect)
-			std::cout << "Òàêîãî ôàéëà íå ñóùåñòâóåò.\n";
-		std::cout << "Ââåäèòå íàçâàíèå ïîâòîðíî (ñ ðàñøèðåíèåì): ";
+			std::cout << "Ã’Ã ÃªÃ®Ã£Ã® Ã´Ã Ã©Ã«Ã  Ã­Ã¥ Ã±Ã³Ã¹Ã¥Ã±Ã²Ã¢Ã³Ã¥Ã².\n";
+		std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã®Ã¢Ã²Ã®ÄŸÃ­Ã® (Ã± ÄŸÃ Ã±Ã¸Ã¨ÄŸÃ¥Ã­Ã¨Ã¥Ã¬): ";
 		std::cin >> filename;
 		isCorrect = checkFilename(filename);
 		if (isCorrect)
@@ -67,11 +67,11 @@ bool InputInFileName(std::string& filename)
 	}
 	file.close();
 	if (filename[0] != '0') {
-		std::cout << "Ôàéë óñïåøíî îòêðûò\n";
+		std::cout << "Ã”Ã Ã©Ã« Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã®Ã²ÃªÄŸÃ»Ã²\n";
 		return true;
 	}
 	else {
-		std::cout << "Âû îòêàçàëèñü îò ââîäà äàííûõ èç ôàéëà\n";
+		std::cout << "Ã‚Ã» Ã®Ã²ÃªÃ Ã§Ã Ã«Ã¨Ã±Ã¼ Ã®Ã² Ã¢Ã¢Ã®Ã¤Ã  Ã¤Ã Ã­Ã­Ã»Ãµ Ã¨Ã§ Ã´Ã Ã©Ã«Ã \n";
 		return false;
 	}
 }
@@ -80,13 +80,13 @@ void InputOutFileName(std::string& filename)
 {
 	std::ifstream file;
 	bool isCorrect;
-	std::cout << "Ââåäèòå íàçâàíèå ôàéëà (ñ ðàñøèðåíèåì): ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã´Ã Ã©Ã«Ã  (Ã± ÄŸÃ Ã±Ã¸Ã¨ÄŸÃ¥Ã­Ã¨Ã¥Ã¬): ";
 	std::cin >> filename;
 	while (!checkFilename(filename))
 	{
-		std::cout << "Ââåäèòå íàçâàíèå ïîâòîðíî (ñ ðàñøèðåíèåì): ";
+		std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã Ã§Ã¢Ã Ã­Ã¨Ã¥ Ã¯Ã®Ã¢Ã²Ã®ÄŸÃ­Ã® (Ã± ÄŸÃ Ã±Ã¸Ã¨ÄŸÃ¥Ã­Ã¨Ã¥Ã¬): ";
 		std::cin >> filename;
 		isCorrect = checkFilename(filename);
 	}
-	std::cout << "Ôàéë óñïåøíî îòêðûò\n";
-}
+	std::cout << "Ã”Ã Ã©Ã« Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã®Ã²ÃªÄŸÃ»Ã²\n";
+}  
