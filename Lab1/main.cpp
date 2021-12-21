@@ -19,20 +19,20 @@ int main()
 	Deque<int> deque;
 	List<int> list;
 
-	cout << "Ââåñòè èçíà÷àëüíûå äàííûå èç ôàéëà?(1/0)" << endl;
+	cout << "Ã‚Ã¢Ã¥Ã±Ã²Ã¨ Ã¨Ã§Ã­Ã Ã·Ã Ã«Ã¼Ã­Ã»Ã¥ Ã¤Ã Ã­Ã­Ã»Ã¥ Ã¨Ã§ Ã´Ã Ã©Ã«Ã ?(1/0)" << endl;
 	int method = safeInput(0, 1);
 	if (method == 1)
 		inputFromFile(queue, stack, deque, list);
 
 	bool isExit = false;
 	while (!isExit) {
-		cout << "1. Ðàáîòàòü ñ î÷åðåäüþ" << endl;
-		cout << "2. Ðàáîòàòü ñî ñòåêîì" << endl;
-		cout << "3. Ðàáîòàòü ñ äåêîì" << endl;
-		cout << "4. Ðàáîòàòü ñî ñïèñêîì" << endl;
-		cout << "5. Ñîõðàíèòü â ôàéë" << endl;
-		cout << "0. Âûõîä" << endl;
-		cout << "Âûáåðåòå ïóíêò ìåíþ: ";
+		cout << "1. ÃÃ Ã¡Ã®Ã²Ã Ã²Ã¼ Ã± Ã®Ã·Ã¥Ã°Ã¥Ã¤Ã¼Ã¾" << endl;
+		cout << "2. ÃÃ Ã¡Ã®Ã²Ã Ã²Ã¼ Ã±Ã® Ã±Ã²Ã¥ÃªÃ®Ã¬" << endl;
+		cout << "3. ÃÃ Ã¡Ã®Ã²Ã Ã²Ã¼ Ã± Ã¤Ã¥ÃªÃ®Ã¬" << endl;
+		cout << "4. ÃÃ Ã¡Ã®Ã²Ã Ã²Ã¼ Ã±Ã® Ã±Ã¯Ã¨Ã±ÃªÃ®Ã¬" << endl;
+		cout << "5. Ã‘Ã®ÃµÃ°Ã Ã­Ã¨Ã²Ã¼ Ã¢ Ã´Ã Ã©Ã«" << endl;
+		cout << "0. Ã‚Ã»ÃµÃ®Ã¤" << endl;
+		cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¥Ã²Ã¥ Ã¯Ã³Ã­ÃªÃ² Ã¬Ã¥Ã­Ã¾: ";
 		method = safeInput(0, 5);
 		switch (method)
 		{
@@ -61,25 +61,25 @@ int main()
 void workWithQueue(Queue<int>& queue) {
 	bool isExit = false;
 	while (!isExit) {
-		cout << "Ðàáîòà ñ î÷åðåäüþ" << endl;
-		cout << "1. Äîáàâèòü ýëåìåíò" << endl;
-		cout << "2. Èçâëå÷ü ýëåìåíò" << endl;
-		cout << "3. Âûâåñòè íà ýêðàí" << endl;
-		cout << "4. Îòñîðòèðîâàòü" << endl;
-		cout << "0. Íàçàä" << endl;
-		cout << "Âûáåðåòå ïóíêò ìåíþ: ";
+		cout << "ÃÃ Ã¡Ã®Ã²Ã  Ã± Ã®Ã·Ã¥Ã°Ã¥Ã¤Ã¼Ã¾" << endl;
+		cout << "1. Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+		cout << "2. ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+		cout << "3. Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã­Ã  Ã½ÃªÃ°Ã Ã­" << endl;
+		cout << "4. ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼" << endl;
+		cout << "0. ÃÃ Ã§Ã Ã¤" << endl;
+		cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¥Ã²Ã¥ Ã¯Ã³Ã­ÃªÃ² Ã¬Ã¥Ã­Ã¾: ";
 		int method = safeInput(0, 4);
 		int tmp;
 		switch (method)
 		{
 		case 1:
-			cout << "Ââåäèòå ÷èñëî, êîòîðîå õîòèòå äîáàâèòü: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®, ÃªÃ®Ã²Ã®Ã°Ã®Ã¥ ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼: ";
 			tmp = safeInput(0, INT32_MAX);
 			queue.push_back(tmp);
 			break;
 		case 2:
 			try {
-				cout << "Èçâëå÷åíî ÷èñëî: " << queue.pop_front() << endl;
+				cout << "ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¥Ã­Ã® Ã·Ã¨Ã±Ã«Ã®: " << queue.pop_front() << endl;
 			}
 			catch (string err) {
 				cout << err << endl;
@@ -101,25 +101,25 @@ void workWithQueue(Queue<int>& queue) {
 void workWithStack(Stack<int>& stack) {
 	bool isExit = false;
 	while (!isExit) {
-		cout << "Ðàáîòà ñî ñòåêîì" << endl;
-		cout << "1. Äîáàâèòü ýëåìåíò" << endl;
-		cout << "2. Èçâëå÷ü ýëåìåíò" << endl;
-		cout << "3. Âûâåñòè íà ýêðàí" << endl;
-		cout << "4. Îòñîðòèðîâàòü" << endl;
-		cout << "0. Íàçàä" << endl;
-		cout << "Âûáåðåòå ïóíêò ìåíþ: ";
+		cout << "ÃÃ Ã¡Ã®Ã²Ã  Ã±Ã® Ã±Ã²Ã¥ÃªÃ®Ã¬" << endl;
+		cout << "1. Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+		cout << "2. ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²" << endl;
+		cout << "3. Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã­Ã  Ã½ÃªÃ°Ã Ã­" << endl;
+		cout << "4. ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼" << endl;
+		cout << "0. ÃÃ Ã§Ã Ã¤" << endl;
+		cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¥Ã²Ã¥ Ã¯Ã³Ã­ÃªÃ² Ã¬Ã¥Ã­Ã¾: ";
 		int method = safeInput(0, 4);
 		int tmp;
 		switch (method)
 		{
 		case 1:
-			cout << "Ââåäèòå ÷èñëî, êîòîðîå õîòèòå äîáàâèòü: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®, ÃªÃ®Ã²Ã®Ã°Ã®Ã¥ ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼: ";
 			tmp = safeInput(0, INT32_MAX);
 			stack.push_back(tmp);
 			break;
 		case 2:
 			try {
-				cout << "Èçâëå÷åíî ÷èñëî: " << stack.pop_back() << endl;
+				cout << "ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¥Ã­Ã® Ã·Ã¨Ã±Ã«Ã®: " << stack.pop_back() << endl;
 			}
 			catch (string err) {
 				cout << err << endl;
@@ -141,32 +141,32 @@ void workWithStack(Stack<int>& stack) {
 void workWithDeque(Deque<int>& deque) {
 	bool isExit = false;
 	while (!isExit) {
-		cout << "Ðàáîòà ñ äåêîì" << endl;
-		cout << "1. Äîáàâèòü ýëåìåíò â íà÷àëî" << endl;
-		cout << "2. Äîáàâèòü ýëåìåíò â êîíåö" << endl;
-		cout << "3. Èçâëå÷ü ýëåìåíò ñ íà÷àëà" << endl;
-		cout << "4. Èçâëå÷ü ýëåìåíò ñ êîíöà" << endl;
-		cout << "5. Âûâåñòè íà ýêðàí" << endl;
-		cout << "6. Îòñîðòèðîâàòü" << endl;
-		cout << "0. Íàçàä" << endl;
-		cout << "Âûáåðåòå ïóíêò ìåíþ: ";
+		cout << "ÃÃ Ã¡Ã®Ã²Ã  Ã± Ã¤Ã¥ÃªÃ®Ã¬" << endl;
+		cout << "1. Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ Ã­Ã Ã·Ã Ã«Ã®" << endl;
+		cout << "2. Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ ÃªÃ®Ã­Ã¥Ã¶" << endl;
+		cout << "3. ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã± Ã­Ã Ã·Ã Ã«Ã " << endl;
+		cout << "4. ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã± ÃªÃ®Ã­Ã¶Ã " << endl;
+		cout << "5. Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã­Ã  Ã½ÃªÃ°Ã Ã­" << endl;
+		cout << "6. ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼" << endl;
+		cout << "0. ÃÃ Ã§Ã Ã¤" << endl;
+		cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¥Ã²Ã¥ Ã¯Ã³Ã­ÃªÃ² Ã¬Ã¥Ã­Ã¾: ";
 		int method = safeInput(0, 6);
 		int tmp;
 		switch (method)
 		{
 		case 1:
-			cout << "Ââåäèòå ÷èñëî, êîòîðîå õîòèòå äîáàâèòü: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®, ÃªÃ®Ã²Ã®Ã°Ã®Ã¥ ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼: ";
 			tmp = safeInput(0, INT32_MAX);
 			deque.push_font(tmp);
 			break;
 		case 2:
-			cout << "Ââåäèòå ÷èñëî, êîòîðîå õîòèòå äîáàâèòü: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®, ÃªÃ®Ã²Ã®Ã°Ã®Ã¥ ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼: ";
 			tmp = safeInput(0, INT32_MAX);
 			deque.push_back(tmp);
 			break;
 		case 3:
 			try {
-				cout << "Èçâëå÷åíî ÷èñëî: " << deque.pop_front() << endl;
+				cout << "ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¥Ã­Ã® Ã·Ã¨Ã±Ã«Ã®: " << deque.pop_front() << endl;
 			}
 			catch (string err) {
 				cout << err << endl;
@@ -174,7 +174,7 @@ void workWithDeque(Deque<int>& deque) {
 			break;
 		case 4:
 			try {
-				cout << "Èçâëå÷åíî ÷èñëî: " << deque.pop_back() << endl;
+				cout << "ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¥Ã­Ã® Ã·Ã¨Ã±Ã«Ã®: " << deque.pop_back() << endl;
 			}
 			catch (string err) {
 				cout << err << endl;
@@ -196,33 +196,33 @@ void workWithDeque(Deque<int>& deque) {
 void workWithList(List<int>& list) {
 	bool isExit = false;
 	while (!isExit) {
-		cout << "Ðàáîòà ñ äåêîì" << endl;
-		cout << "1. Äîáàâèòü ýëåìåíò â íà÷àëî" << endl;
-		cout << "2. Äîáàâèòü ýëåìåíò â êîíåö" << endl;
-		cout << "3. Èçâëå÷ü ýëåìåíò ñ íà÷àëà" << endl;
-		cout << "4. Èçâëå÷ü ýëåìåíò ñ êîíöà" << endl;
-		cout << "5. Ïîëó÷èòü ýëåìåíò ïî èíäåêñó" << endl;
-		cout << "6. Âûâåñòè íà ýêðàí" << endl;
-		cout << "7. Îòñîðòèðîâàòü" << endl;
-		cout << "0. Íàçàä" << endl;
-		cout << "Âûáåðåòå ïóíêò ìåíþ: ";
+		cout << "ÃÃ Ã¡Ã®Ã²Ã  Ã± Ã¤Ã¥ÃªÃ®Ã¬" << endl;
+		cout << "1. Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ Ã­Ã Ã·Ã Ã«Ã®" << endl;
+		cout << "2. Ã„Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¢ ÃªÃ®Ã­Ã¥Ã¶" << endl;
+		cout << "3. ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã± Ã­Ã Ã·Ã Ã«Ã " << endl;
+		cout << "4. ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã± ÃªÃ®Ã­Ã¶Ã " << endl;
+		cout << "5. ÃÃ®Ã«Ã³Ã·Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã¯Ã® Ã¨Ã­Ã¤Ã¥ÃªÃ±Ã³" << endl;
+		cout << "6. Ã‚Ã»Ã¢Ã¥Ã±Ã²Ã¨ Ã­Ã  Ã½ÃªÃ°Ã Ã­" << endl;
+		cout << "7. ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼" << endl;
+		cout << "0. ÃÃ Ã§Ã Ã¤" << endl;
+		cout << "Ã‚Ã»Ã¡Ã¥Ã°Ã¥Ã²Ã¥ Ã¯Ã³Ã­ÃªÃ² Ã¬Ã¥Ã­Ã¾: ";
 		int method = safeInput(0, 7);
 		int tmp;
 		switch (method)
 		{
 		case 1:
-			cout << "Ââåäèòå ÷èñëî, êîòîðîå õîòèòå äîáàâèòü: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®, ÃªÃ®Ã²Ã®Ã°Ã®Ã¥ ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼: ";
 			tmp = safeInput(0, INT32_MAX);
 			list.push_font(tmp);
 			break;
 		case 2:
-			cout << "Ââåäèòå ÷èñëî, êîòîðîå õîòèòå äîáàâèòü: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®, ÃªÃ®Ã²Ã®Ã°Ã®Ã¥ ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¤Ã®Ã¡Ã Ã¢Ã¨Ã²Ã¼: ";
 			tmp = safeInput(0, INT32_MAX);
 			list.push_back(tmp);
 			break;
 		case 3:
 			try {
-				cout << "Èçâëå÷åíî ÷èñëî: " << list.pop_front() << endl;
+				cout << "ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¥Ã­Ã® Ã·Ã¨Ã±Ã«Ã®: " << list.pop_front() << endl;
 			}
 			catch (string err) {
 				cout << err << endl;
@@ -230,20 +230,20 @@ void workWithList(List<int>& list) {
 			break;
 		case 4:
 			try {
-				cout << "Èçâëå÷åíî ÷èñëî: " << list.pop_back() << endl;
+				cout << "ÃˆÃ§Ã¢Ã«Ã¥Ã·Ã¥Ã­Ã® Ã·Ã¨Ã±Ã«Ã®: " << list.pop_back() << endl;
 			}
 			catch (string err) {
 				cout << err << endl;
 			}
 			break;
 		case 5:
-			cout << "Ââåäèòå èíäåêñ: ";
+			cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã­Ã¤Ã¥ÃªÃ±: ";
 			tmp = safeInput(0, INT32_MAX);
 			try {
-				cout << "Ïî èíäåêñó " << tmp << " ëåæèò ÷èñëî: " << list[tmp] << endl;
+				cout << "ÃÃ® Ã¨Ã­Ã¤Ã¥ÃªÃ±Ã³ " << tmp << " Ã«Ã¥Ã¦Ã¨Ã² Ã·Ã¨Ã±Ã«Ã®: " << list[tmp] << endl;
 			}
 			catch (int err) {
-				cout << "Èíäåêñ " << err << " íåäîïóñòèì" << endl;
+				cout << "ÃˆÃ­Ã¤Ã¥ÃªÃ± " << err << " Ã­Ã¥Ã¤Ã®Ã¯Ã³Ã±Ã²Ã¨Ã¬" << endl;
 			}
 			break;
 		case 6:
@@ -287,4 +287,4 @@ void printToFile(Queue<int>& queue, Stack<int>& stack, Deque<int>& deque, List<i
 	deque.printToFile(out);
 	list.printToFile(out);
 	out.close();
-}
+}  
