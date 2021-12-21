@@ -64,7 +64,7 @@ void Queue<T>::push_back(T data)
 
 template <class T>
 T Queue<T>::pop_front() {
-	string err = "Очередь пуста, нечего извлекать";
+	string err = "ГЋГ·ГҐГ°ГҐГ¤Гј ГЇГіГ±ГІГ , Г­ГҐГ·ГҐГЈГ® ГЁГ§ГўГ«ГҐГЄГ ГІГј";
 	if (isEmpty())
 		throw err;
 	T data;
@@ -126,7 +126,7 @@ bool Queue<T>::isEmpty() {
 template <class T>
 void Queue<T>::printToConsole() {
 	if (size == 0)
-		cout << "Очередь пуста";
+		cout << "ГЋГ·ГҐГ°ГҐГ¤Гј ГЇГіГ±ГІГ ";
 	else
 		for (int i = 0; i < size; i++)
 		{
@@ -152,7 +152,7 @@ void Queue<T>::printToFile(ofstream& out) {
 
 template <class T>
 void Queue<T>::inputFromFile(ifstream& out) {
-	string err = "Файл не может быть корректно прочитан";
+	string err = "Г”Г Г©Г« Г­ГҐ Г¬Г®Г¦ГҐГІ ГЎГ»ГІГј ГЄГ®Г°Г°ГҐГЄГІГ­Г® ГЇГ°Г®Г·ГЁГІГ Г­";
 	string tmpS;
 	if (!getline(out, tmpS))
 		throw err;
