@@ -4,4 +4,4 @@ struct Element
 {
 	T data;
 	Element* prev;
-};
+}; 
